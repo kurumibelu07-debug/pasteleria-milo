@@ -375,7 +375,98 @@ El presente informe expone el proceso de análisis y diseño orientado al desarr
           </div>
           <div class="card">
             <h2>Estructura de Datos</h2>
-            <p>[Detalla el diccionario de datos de la pastelería...]</p>
+              <p>
+                El sistema de gestión de pastelería contará con una estructura
+                de datos organizada para almacenar y administrar la información
+                de los clientes, productos, pedidos, ventas, pagos, inventario,
+                compras, facturación y caja.
+              </p>
+            <h3>Diccionario de Datos</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Entidad</th>
+                  <th>Descripción</th>
+                  <th>Datos principales</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cliente</td>
+                  <td>Almacena información de los clientes.</td>
+                  <td>ID, nombre, teléfono, correo.</td>
+                </tr>
+                <tr>
+                  <td>Producto</td>
+                  <td>Registra los productos disponibles para la venta.</td>
+                  <td>ID, nombre, descripción, precio, categoría, estado.</td>
+                </tr>
+                <tr>
+                  <td>Pedido</td>
+                  <td>Registra los pedidos realizados por los clientes.</td>
+                  <td>ID, cliente, fecha, estado, total.</td>
+                </tr>
+                <tr>
+                  <td>Detalle del Pedido</td>
+                  <td>Almacena los productos incluidos en cada pedido.</td>
+                  <td>ID, pedido, producto, cantidad, subtotal.</td>
+                </tr>
+                <tr>
+                  <td>Venta</td>
+                  <td>Registra las ventas realizadas diariamente.</td>
+                  <td>ID, usuario, fecha, total.</td>
+                </tr>
+                <tr>
+                  <td>Pago</td>
+                  <td>Almacena la información de los pagos realizados.</td>
+                  <td>ID, venta, método de pago, monto, estado.</td>
+                </tr>
+                <tr>
+                  <td>Inventario</td>
+                  <td>Controla las cantidades disponibles de los productos.</td>
+                  <td>ID, producto, cantidad disponible, stock mínimo.</td>
+                </tr>
+                <tr>
+                  <td>Movimiento de Inventario</td>
+                  <td>Registra las entradas y salidas de productos.</td>
+                  <td>ID, producto, tipo, cantidad, fecha.</td>
+                </tr>
+                <tr>
+                  <td>Proveedor</td>
+                  <td>Almacena información de los proveedores.</td>
+                  <td>ID, nombre, teléfono, dirección.</td>
+                </tr>
+                <tr>
+                  <td>Compra</td>
+                  <td>Registra las compras realizadas a proveedores.</td>
+                  <td>ID, proveedor, fecha, total.</td>
+                </tr>
+                <tr>
+                  <td>Factura</td>
+                  <td>Almacena los datos de las facturas emitidas.</td>
+                  <td>ID, venta, número, fecha, monto.</td>
+                </tr>
+                <tr>
+                  <td>Caja</td>
+                  <td>Controla las aperturas y cierres de caja.</td>
+                  <td>ID, usuario, fecha de apertura, fecha de cierre, saldo.</td>
+                </tr>
+                <tr>
+                  <td>Usuario</td>
+                  <td>Gestiona los accesos al sistema.</td>
+                  <td>ID, nombre, usuario, contraseña, rol.</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Organización de la información</h3>
+            <p>
+              Las entidades estarán relacionadas entre sí para garantizar
+              la integridad de la información. De esta manera, los pedidos
+              estarán vinculados con sus clientes y productos, las ventas
+              con sus respectivos pagos y las compras con el inventario.
+              Esto permitirá mantener un control organizado de las
+              operaciones de la pastelería.
+            </p>
           </div>
         </section>
 
