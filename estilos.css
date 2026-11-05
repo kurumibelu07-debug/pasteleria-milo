@@ -227,6 +227,34 @@ body {
   color: var(--active-color);
 }
 
+/* Tabla del diccionario de datos */
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.card th,
+.card td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.card th {
+    background: #292929;
+    color: #ffffff;
+}
+
+.card td {
+    color: #000000;
+}
+
+.card tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
 /* Marcos para Imágenes */
 .placeholder-box {
   background-color: var(--accent-light);
