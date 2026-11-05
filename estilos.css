@@ -201,6 +201,26 @@ body {
   box-shadow: var(--shadow);
 }
 
+.card h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #444;
+}
+
+.card ol {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.card li {
+    margin-bottom: 15px;
+}
+
+.card li p {
+    margin-top: 5px;
+}
+
 .card h2 {
   font-size: 1.3rem;
   margin-bottom: 15px;
