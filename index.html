@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema Pastelería Milo - Informe</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <!-- Menu Lateral -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header" style="text-align: center">
+        <img
+          src="img/logo.png"
+          alt="Logo Pastelería Milo"
+          style="max-width: 120px; height: auto; margin-bottom: 10px"
+        />
+        <div class="brand-title">Pastelería Milo</div>
+        <div class="brand-subtitle">Sistema de Información</div>
+      </div>
+
+      <ul class="sidebar-menu">
+        <li class="menu-item">
+          <a href="#" class="menu-link active" data-target="sec-inicio">
+            <span>Inicio</span>
+          </a>
+        </li>
+
+        <!-- Marco Teorico -->
+        <li class="menu-item">
+          <a href="#" class="menu-link has-submenu">
+            <span>Marco Teórico</span>
+            <span class="arrow">&#10095;</span>
+          </a>
+          <ul class="submenu">
+            <li><a href="#" data-target="sec-portada">Portada</a></li>
+            <li>
+              <a href="#" data-target="sec-introduccion"
+                >Introducción y Antecedentes</a
+              >
+            </li>
+            <li>
+              <a href="#" data-target="sec-problema">Planteamiento y Árbol</a>
+            </li>
+            <li><a href="#" data-target="sec-objetivos">Objetivos</a></li>
+            <li><a href="#" data-target="sec-metodologia">Metodología</a></li>
+            <li>
+              <a href="#" data-target="sec-planificacion"
+                >Planificación (Gantt)</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <!-- Analisis Estructurado -->
+        <li class="menu-item">
+          <a href="#" class="menu-link has-submenu">
+            <span>Análisis Estructurado</span>
+            <span class="arrow">&#10095;</span>
+          </a>
+          <ul class="submenu">
+            <li>
+              <a href="#" data-target="sec-modelo-ambiental"
+                >Modelo Ambiental</a
+              >
+            </li>
+            <li>
+              <a href="#" data-target="sec-modelo-comportamiento"
+                >Modelo de Comportamiento</a
+              >
+            </li>
+            <li>
+              <a href="#" data-target="sec-diccionario">Diccionario de Datos</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Orientado a Objetos -->
+        <li class="menu-item">
+          <a href="#" class="menu-link has-submenu">
+            <span>Orientado a Objetos</span>
+            <span class="arrow">&#10095;</span>
+          </a>
+          <ul class="submenu">
+            <li><a href="#" data-target="sec-casos-uso">Casos de Uso</a></li>
+            <li>
+              <a href="#" data-target="sec-diagrama-clases"
+                >Diagrama de Clases</a
+              >
+            </li>
+            <li>
+              <a href="#" data-target="sec-diagrama-secuencia"
+                >Secuencia y Actividades</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <a href="#" class="menu-link" data-target="sec-videos">
+            <span>Videos</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link" data-target="sec-contactos">
+            <span>Contactos</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Contenedor Principal -->
+    <div class="main-wrapper">
+      <header class="topbar">
+        <button class="toggle-btn" id="sidebar-toggle">&#9776;</button>
+        <div
+          style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600"
+        ></div>
+      </header>
+
+      <main class="content-area">
+        <!-- Inicio -->
+        <section id="sec-inicio" class="doc-section active">
+          <div class="section-header">
+            <h1>Pastelería Milo</h1>
+            <p style="color: var(--text-muted); margin-top: 5px">
+              Plataforma de presentación del proyecto del sistema.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Bienvenido al Sistema</h2>
+            <p>
+              Utiliza el menú lateral izquierdo para navegar por cada una de las
+              fases del informe de la pastelería.
+            </p>
+            <div style="margin-top: 15px">
+              <button
+                class="btn-primary"
+                onclick="
+                  openModal(
+                    'Información',
+                    'Este sitio web recopila todo el desarrollo estructurado y orientado a objetos enfocado en la Pastelería Milo.',
+                  )
+                "
+              >
+                Ver Resumen
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portada -->
+        <section id="sec-portada" class="doc-section">
+          <div class="section-header">
+            <h1>Portada</h1>
+          </div>
+          <div class="card" style="text-align: center">
+            <h2>Sistema de Información para Pastelería Milo</h2>
+            <p style="margin-top: 10px">
+              <strong>Tema:</strong> Automatización y Control de Pedidos
+            </p>
+            <p><strong>Integrantes:</strong> [Nombres del grupo]</p>
+          </div>
+        </section>
+
+        <!-- Introduccion -->
+        <section id="sec-introduccion" class="doc-section">
+          <div class="section-header">
+            <h1>Introducción y Antecedentes</h1>
+          </div>
+          <div class="card">
+            <h2>Introducción</h2>
+            <p>[Redacta aquí la introducción...]</p>
+          </div>
+          <div class="card">
+            <h2>Antecedentes</h2>
+            <p>[Redacta aquí los antecedentes...]</p>
+          </div>
+        </section>
+
+        <!-- Problema -->
+        <section id="sec-problema" class="doc-section">
+          <div class="section-header">
+            <h1>Planteamiento del Problema</h1>
+          </div>
+          <div class="card">
+            <h2>Descripción del Problema</h2>
+            <p>[Detalla el problema principal de la pastelería...]</p>
+          </div>
+          <div class="card">
+            <h2>Árbol de Problemas</h2>
+            <div class="placeholder-box">
+              <img
+                src="img/arbol-problemas.png"
+                alt="Árbol de Problemas"
+                style="max-width: 100%; height: auto; border-radius: 6px"
+              />
+              <p style="margin-top: 10px; font-size: 0.85rem"></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Objetivos -->
+        <section id="sec-objetivos" class="doc-section">
+          <div class="section-header">
+            <h1>Propósito del Estudio</h1>
+          </div>
+          <div class="card">
+            <h2>Objetivo General</h2>
+            <p>[Escribe el objetivo general...]</p>
+          </div>
+          <div class="card">
+            <h2>Objetivos Específicos</h2>
+            <p>[Escribe los objetivos específicos...]</p>
+          </div>
+        </section>
+
+        <!-- Metodologia -->
+        <section id="sec-metodologia" class="doc-section">
+          <div class="section-header">
+            <h1>Metodología de Investigación</h1>
+          </div>
+          <div class="card">
+            <h2>Métodos y Alcances</h2>
+            <p>[Detalla cómo se hizo la investigación en el negocio...]</p>
+          </div>
+        </section>
+
+        <!-- Planificacion -->
+        <section id="sec-planificacion" class="doc-section">
+          <div class="section-header">
+            <h1>Planificación de Actividades</h1>
+          </div>
+          <div class="card">
+            <h2>Cronograma y Gantt</h2>
+            <div class="placeholder-box">
+              <img
+                src="img/gantt.png"
+                alt="Diagrama de Gantt"
+                style="max-width: 100%; height: auto; border-radius: 6px"
+              />
+              <p style="margin-top: 10px; font-size: 0.85rem">
+                Guarda tu imagen como gantt.png en la carpeta img
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Modelo Ambiental -->
+        <section id="sec-modelo-ambiental" class="doc-section">
+          <div class="section-header">
+            <h1>Modelo Ambiental</h1>
+          </div>
+          <div class="card">
+            <h2>Diagrama de Contexto</h2>
+            <div class="placeholder-box">
+              <img
+                src="img/contexto.png"
+                alt="Diagrama de Contexto"
+                style="max-width: 100%; height: auto; border-radius: 6px"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Modelo Comportamiento -->
+        <section id="sec-modelo-comportamiento" class="doc-section">
+          <div class="section-header">
+            <h1>Modelo de Comportamiento</h1>
+          </div>
+          <div class="card">
+            <h2>Diagrama de Flujo de Datos</h2>
+            <div class="placeholder-box">
+              <img
+                src="img/dfd.png"
+                alt="DFD"
+                style="max-width: 100%; height: auto; border-radius: 6px"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Diccionario de Datos -->
+        <section id="sec-diccionario" class="doc-section">
+          <div class="section-header">
+            <h1>Diccionario de Datos</h1>
+          </div>
+          <div class="card">
+            <h2>Estructura de Datos</h2>
+            <p>[Detalla el diccionario de datos de la pastelería...]</p>
+          </div>
+        </section>
+
+        <!-- Casos de Uso -->
+        <section id="sec-casos-uso" class="doc-section">
+          <div class="section-header">
+            <h1>Casos de Uso</h1>
+          </div>
+          <div class="card">
+            <h2>Diagrama de Casos de Uso</h2>
+            <div class="placeholder-box">
+              <img
+                src="img/casos-uso.png"
+                alt="Casos de Uso"
+                style="max-width: 100%; height: auto; border-radius: 6px"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Diagrama de Clases -->
+        <section id="sec-diagrama-clases" class="doc-section">
+          <div class="section-header">
+            <h1>Diagrama de Clases</h1>
+          </div>
+          <div class="card">
+            <h2>Clases del Sistema</h2>
+            <div class="placeholder-box">
+              <img
+                src="img/clases.png"
+                alt="Diagrama de Clases"
+                style="max-width: 100%; height: auto; border-radius: 6px"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Secuencia -->
+        <section id="sec-diagrama-secuencia" class="doc-section">
+          <div class="section-header">
+            <h1>Diagramas de Secuencia</h1>
+          </div>
+          <div class="card">
+            <h2>Secuencia y Actividades</h2>
+            <div class="placeholder-box">
+              <img
+                src="img/secuencia.png"
+                alt="Secuencia"
+                style="max-width: 100%; height: auto; border-radius: 6px"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Videos -->
+        <section id="sec-videos" class="doc-section">
+          <div class="section-header">
+            <h1>Videos del Proyecto</h1>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <h2>Exposición Estructurado</h2>
+              <div class="placeholder-box">
+                <p>Inserta tu iframe de YouTube aquí</p>
+              </div>
+            </div>
+            <div class="card">
+              <h2>Exposición OO</h2>
+              <div class="placeholder-box">
+                <p>Inserta tu iframe de YouTube aquí</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contactos -->
+        <section id="sec-contactos" class="doc-section">
+          <div class="section-header">
+            <h1>Contactos</h1>
+          </div>
+          <div class="card">
+            <h2>Equipo de Desarrolladores</h2>
+            <p>Pastelería Milo - 2026</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Ventana Modal -->
+    <div class="modal-overlay" id="summary-modal">
+      <div class="modal-card">
+        <button class="modal-close">&times;</button>
+        <h3
+          id="modal-title"
+          style="color: var(--active-color); margin-bottom: 10px"
+        >
+          Título
+        </h3>
+        <p
+          id="modal-body"
+          style="color: var(--text-dark); line-height: 1.5"
+        ></p>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const dropdowns = document.querySelectorAll(".has-submenu");
+
+        dropdowns.forEach((dropdown) => {
+          dropdown.addEventListener("click", (e) => {
+            e.preventDefault();
+            const submenu = dropdown.nextElementSibling;
+            const arrow = dropdown.querySelector(".arrow");
+
+            submenu.classList.toggle("open");
+            if (arrow) {
+              arrow.classList.toggle("rotate");
+            }
+          });
+        });
+
+        const navLinks = document.querySelectorAll("[data-target]");
+        const sections = document.querySelectorAll(".doc-section");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute("data-target");
+
+            document
+              .querySelectorAll(".menu-link, .submenu a")
+              .forEach((el) => el.classList.remove("active"));
+            link.classList.add("active");
+
+            sections.forEach((section) => {
+              section.classList.remove("active");
+              if (section.id === targetId) {
+                section.classList.add("active");
+              }
+            });
+          });
+        });
+
+        const toggleBtn = document.getElementById("sidebar-toggle");
+        const sidebar = document.getElementById("sidebar");
+
+        if (toggleBtn) {
+          toggleBtn.addEventListener("click", () => {
+            if (sidebar.style.display === "none") {
+              sidebar.style.display = "flex";
+            } else {
+              sidebar.style.display = "none";
+            }
+          });
+        }
+
+        const modal = document.getElementById("summary-modal");
+        const modalTitle = document.getElementById("modal-title");
+        const modalBody = document.getElementById("modal-body");
+        const closeModal = document.querySelector(".modal-close");
+
+        window.openModal = function (title, content) {
+          if (modalTitle && modalBody && modal) {
+            modalTitle.innerText = title;
+            modalBody.innerText = content;
+            modal.style.display = "flex";
+          }
+        };
+
+        if (closeModal) {
+          closeModal.addEventListener("click", () => {
+            modal.style.display = "none";
+          });
+        }
+
+        window.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
