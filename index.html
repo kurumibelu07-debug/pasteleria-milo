@@ -163,6 +163,7 @@
             <p>Estu. Juan Pablo Camacho Flores CI: 12862284</p>
             <p>Estu. Joel David Arratia Mendizabal CI: 6986901</p>
             <p>Estu. Belinda Aracely Flores Choque CI: 12668176</p>
+            <p>Estu. Brenda Beatriz Arcani Quispe CI: 13927567</p>
 
           </div>
         </section>
@@ -211,32 +212,14 @@ El presente informe expone el proceso de análisis y diseño orientado al desarr
         </section>
 
         <!-- Objetivos -->
-        <section id="sec-objetivos" class="doc-section">
-          <div class="section-header">
-            <h1>Propósito del Estudio</h1>
-          </div>
-          <div class="card">
-            <h2>Objetivo General</h2>
-            <p>Diseñar y desarrollar un Sistema de Gestión de Pedidos y Clientes para la cafetería y pastelería, aplicando técnicas de análisis y diseño de sistemas, con el fin de organizar la información del negocio, facilitar la gestión de ventas y mejorar la consulta de productos y precios.</p>
-          </div>
-          <div class="card">
-            <h2>Objetivos Específicos</h2>
-            <p>- Identificar y documentar las necesidades operativas del negocio mediante el análisis del cuestionario aplicado.</p>
-            <p>- Definir los requerimientos funcionales y no funcionales del sistema de acuerdo con las necesidades identificadas.</p>
-            <p>- Diseñar las interfaces para la consulta del catálogo y la gestión de ventas, inventario, pedidos y clientes.</p>
-            <p>- Proponer una estructura de datos que permita organizar la información de productos, ventas, inventario, pedidos y clientes, de acuerdo con el alcance acordado.</p>
-            <p>- Validar el funcionamiento y la facilidad de uso del sistema mediante pruebas con el personal del establecimiento.</p>
-          </div>
-        </section>
-
-        <!-- Metodologia -->
         <section id="sec-metodologia" class="doc-section">
           <div class="section-header">
             <h1>Metodología de Investigación</h1>
           </div>
           <div class="card">
             <h2>Métodos y Alcances</h2>
-            <p><strong>Cuestionario:</strong> Se aplicaron 15 preguntas distribuidas en cinco bloques: información general del negocio, procesos actuales, identificación de necesidades, características deseadas del sistema y preguntas finales.</p>
+            <p><strong>Cuestionario:</strong> Se aplicaron 35 preguntas distribuidas en cinco bloques: información general del negocio, procesos actuales, identificación de necesidades, características deseadas del sistema y preguntas finales.</p>
+            
             <h3>1. Información general del negocio</h3>
             <ol>
               <li><strong>¿Cuál es la actividad principal del negocio?</strong>
@@ -248,9 +231,22 @@ El presente informe expone el proceso de análisis y diseño orientado al desarr
               <li><strong>¿Cuántas personas trabajan aquí?</strong>
                 <p>Una persona de lunes a viernes y otra los fines de semana.</p>
               </li>
+              <li><strong>¿Cuál es el horario de atención al público de la pastelería?</strong>
+                <p>Horario continuo de lunes a domingo.</p>
+              </li>
+              <li><strong>¿El local es propio o alquilado?</strong>
+                <p>Alquilado.</p>
+              </li>
+              <li><strong>¿Cuál es el flujo aproximado de clientes diarios?</strong>
+                <p>Variable entre días de semana y fines de semana.</p>
+              </li>
+              <li><strong>¿Qué tipo de productos tienen mayor demanda?</strong>
+                <p>Pastelería fina y café tradicional.</p>
+              </li>
             </ol>
+
             <h3>2. Procesos actuales</h3>
-            <ol start="4">
+            <ol start="8">
               <li><strong>¿Cómo registran actualmente sus ventas?</strong>
                 <p>Cada venta se registra diariamente en un libro físico.</p>
               </li>
@@ -260,9 +256,22 @@ El presente informe expone el proceso de análisis y diseño orientado al desarr
               <li><strong>¿Cómo registran las compras y los gastos?</strong>
                 <p>Las compras se realizan semanalmente y los gastos se registran diariamente.</p>
               </li>
+              <li><strong>¿Cómo manejan la comunicación con los proveedores?</strong>
+                <p>Mediante llamadas telefónicas y aplicaciones de mensajería.</p>
+              </li>
+              <li><strong>¿Cómo calculan las ganancias o cortes de caja diarios?</strong>
+                <p>De forma manual al finalizar la jornada sumando el efectivo disponible.</p>
+              </li>
+              <li><strong>¿Qué método utilizan actualmente para dar a conocer nuevos productos?</strong>
+                <p>Publicaciones esporádicas en redes sociales y recomendación boca a boca.</p>
+              </li>
+              <li><strong>¿Cómo gestionan los pedidos personalizados o encargos especiales?</strong>
+                <p>Anotándolos en libretas o notas de papel de forma manual.</p>
+              </li>
             </ol>
+
             <h3>3. Identificación de necesidades</h3>
-            <ol start="7">
+            <ol start="15">
               <li><strong>¿Qué proceso del negocio les gustaría mejorar?</strong>
                 <p>La visibilidad del negocio en redes sociales y la implementación de un menú virtual.</p>
               </li>
@@ -272,9 +281,22 @@ El presente informe expone el proceso de análisis y diseño orientado al desarr
               <li><strong>¿Qué tareas les gustaría automatizar?</strong>
                 <p>Los registros diarios de ventas y la implementación de un menú virtual.</p>
               </li>
+              <li><strong>¿Existen pérdidas frecuentes por productos vencidos o mal inventariados?</strong>
+                <p>Ocasionalmente debido a un control puramente visual y manual.</p>
+              </li>
+              <li><strong>¿Se presentan confusiones en los precios al momento de atender rápido?</strong>
+                <p>Sí, especialmente en días con mayor afluencia de clientes los fines de semana.</p>
+              </li>
+              <li><strong>¿Qué tan complejo resulta realizar el arqueo de caja al final del día?</strong>
+                <p>Toma tiempo valioso cruzar los datos del libro físico de ventas con el dinero real.</p>
+              </li>
+              <li><strong>¿Consideran que la falta de un sistema digital limita el crecimiento de las ventas?</strong>
+                <p>Sí, porque los clientes actuales buscan opciones más ágiles y digitales.</p>
+              </li>
             </ol>
+
             <h3>4. Características deseadas del sistema</h3>
-            <ol start="10">
+            <ol start="22">
               <li><strong>¿Qué funciones les gustaría que tuviera el sistema?</strong>
                 <p>Un menú digital accesible mediante código QR y un sistema móvil para registrar ventas e inventario.</p>
               </li>
@@ -284,9 +306,22 @@ El presente informe expone el proceso de análisis y diseño orientado al desarr
               <li><strong>¿Les gustaría consultar la información desde una computadora o un celular?</strong>
                 <p>Principalmente desde un teléfono celular.</p>
               </li>
+              <li><strong>¿El sistema debería contar con diferentes niveles de acceso o roles de usuario?</strong>
+                <p>Sí, diferenciando entre administrador (propietario) y operador/vendedor.</p>
+              </li>
+              <li><strong>¿Es importante que la interfaz sea sencilla y rápida de aprender?</strong>
+                <p>Sí, para evitar errores durante la atención rápida al cliente.</p>
+              </li>
+              <li><strong>¿Se requiere que el sistema funcione de manera fluida en dispositivos móviles gama media?</strong>
+                <p>Sí, adaptándose a los teléfonos que ya utiliza el personal.</p>
+              </li>
+              <li><strong>¿Les gustaría recibir alertas cuando un producto esté por agotarse?</strong>
+                <p>Sí, para optimizar las compras y reposiciones semanales.</p>
+              </li>
             </ol>
+
             <h3>5. Preguntas finales</h3>
-            <ol start="13">
+            <ol start="29">
               <li><strong>¿Qué beneficios esperan obtener con un nuevo sistema?</strong>
                 <p>Consultar los registros desde cualquier lugar, controlar las necesidades de inventario y permitir que los clientes revisen el menú y sus precios sin acudir al establecimiento.</p>
               </li>
@@ -296,7 +331,19 @@ El presente informe expone el proceso de análisis y diseño orientado al desarr
               <li><strong>¿Hay alguna otra necesidad o problema que consideran importante resolver?</strong>
                 <p>Mejorar la visibilidad del negocio en redes sociales para atraer nuevos clientes.</p>
               </li>
-          </ol>
+              <li><strong>¿Cuál es el presupuesto estimado o disposición de inversión para tecnología en el local?</strong>
+                <p>Orientado a soluciones accesibles y de bajo costo de mantenimiento inicial.</p>
+              </li>
+              <li><strong>¿Cuánto tiempo estarían dispuestos a invertir en la capacitación del personal?</strong>
+                <p>Un par de sesiones cortas debido a la simplicidad requerida.</p>
+              </li>
+              <li><strong>¿Consideran factible la adopción total de pagos digitales complementarios al efectivo?</strong>
+                <p>Sí, mediante pasarelas o billeteras móviles como Yape u otras alternativas locales.</p>
+              </li>
+              <li><strong>¿Qué expectativas tienen respecto al soporte técnico o actualizaciones del sistema a futuro?</strong>
+                <p>Que sea de fácil manejo y permita correcciones o mejoras continuas según el crecimiento de la pastelería.</p>
+              </li>
+            </ol>
         </div>
         </section>
 
